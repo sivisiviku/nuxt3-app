@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-gradient-to-r from-emerald-500 to-teal-400 h-max flex justify-between items-center px-8 py-4 shadow-md"
+    class="bg-gradient-to-r from-emerald-500 to-teal-400 h-max flex justify-between items-center px-8 py-4 shadow-md fixed top-0 left-0 right-0"
   >
     <button
       class="bg-green-300 px-4 py-2 rounded-lg shadow-md text-sm"
@@ -21,7 +21,7 @@
       Next >>
     </button>
   </nav>
-  <div class="p-8">
+  <div class="px-8 mt-24">
     <slot />
   </div>
   <TutorialMenu
@@ -30,6 +30,12 @@
     @emitTutorial="tutorial($event)"
     :tutorials="tutorials"
   />
+  <a
+    href="#"
+    class="fixed bottom-3 right-3 bg-green-300 p-2 rounded-full shadow-md text-3xl cursor-pointer"
+  >
+    🔝
+  </a>
 </template>
 
 <script>
@@ -40,7 +46,7 @@ export default {
       currentTutorialNumber: 1,
       tutorials: [
         {
-          title: "Tutorial 1",
+          title: "Baby Name Generator",
           link: "/",
         },
         {
