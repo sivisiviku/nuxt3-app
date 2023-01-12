@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-gradient-to-r from-emerald-500 to-teal-400 h-max flex justify-between items-center px-8 py-4 shadow-md fixed top-0 left-0 right-0"
+    class="bg-gradient-to-r from-emerald-500 to-teal-400 h-max flex justify-between items-center px-8 py-4 shadow-md fixed top-0 left-0 right-0 z-10"
   >
     <button
       class="bg-green-300 px-4 py-2 rounded-lg shadow-md text-sm"
@@ -32,7 +32,7 @@
   />
   <a
     href="#"
-    class="fixed bottom-3 right-3 bg-green-300 p-2 rounded-full shadow-md text-3xl cursor-pointer"
+    class="fixed bottom-3 right-3 bg-green-300 p-2 rounded-full shadow-md text-3xl cursor-pointer z-10"
   >
     🔝
   </a>
@@ -50,7 +50,7 @@ export default {
           link: "/",
         },
         {
-          title: "Tutorial 2",
+          title: "Task Board",
           link: "/tutorial-2",
         },
         {
